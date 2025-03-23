@@ -30,10 +30,10 @@ const MovieCard = ({ movie: { title, overview, vote_average, poster_path, releas
             )}
             <div className="flex gap-2 font-bold text-white">
               <span className="flex flex-row items-center gap-0.5">
-                <img src="/star.svg" alt="Star Icon" className="h-4 w-4" /> {vote_average}
+                <img src="/star.svg" alt="Star Icon" className="h-4 w-4" /> { vote_average ? vote_average.toFixed(1): "N/A" }
               </span>
               <span className="text-gray-400">• {original_language}</span>
-              <span className="text-gray-400">• {release_date}</span>
+              <span className="text-gray-400">• {release_date ? release_date.split("-")[0] : "N/A"}</span>
             </div>
           </div>
         </div>
