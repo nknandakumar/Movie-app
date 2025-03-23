@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: black;
+  color: white;
+
+}
+
+
+h1{
+  @apply mx-auto max-w-4xl text-center text-5xl font-bold leading-tight tracking-[-1%] text-white sm:text-[64px] sm:leading-[76px];
+}
+
+h2{
+  @apply text-2xl font-bold sm:text-3xl;
+}
+
+.center{
+  @apply flex justify-center items-center flex-col ;
+}
+  
+header img {
+  @apply w-full max-w-lg h-auto object-contain mx-auto drop-shadow-md;
+}
+
+@layer components{
+  .pattern{
+    @apply   bg-[url('/hero-bg.png')]  h-screen w-screen bg-cover bg-center 
+  }
+}
+
+@utility text-gradient {
+  @apply bg-linear-to-r from-[#D6C7FF] to-[#AB8BFF] bg-clip-text text-transparent;
+}
