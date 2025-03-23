@@ -10,8 +10,8 @@ const MovieCard = ({ movie: { title, overview, vote_average, poster_path, releas
         <div className="space-y-2">
           <img
             className="h-auto w-full rounded-lg"
-            src={poster_path ? `https://image.tmdb.org/t/p/w500${poster_path}` : "/no-image.png"}
-            alt="Movie Poster"
+            src={poster_path ? `https://image.tmdb.org/t/p/w500${poster_path}` : "./no-movie.png"}
+            alt={` ${title} Movie Poster`}
           />
           <h3 className="font-bold text-base md:text-2xl line-clamp-1 text-white">
             {title}

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Loading = () => {
   return (
-    <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mx-10  md:mx-20 px-6  mb-10" >   
+    <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-6  md:mx-20   mb-10" >   
   {
     [...Array(6)].map((_,i)=>(
         <div key={i} className="w-full h-[500px]  bg-[#1a1a1a] p-4 rounded-lg shadow-white animate-pulse">
